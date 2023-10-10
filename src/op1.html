@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <script>
+
+    function bepaalLengteZinnen(arrayMetZinnen, callback){
+      for(let i = 0; i < arrayMetZinnen.length; i++){
+        callback(arrayMetZinnen[i]);
+      }
+    }
+
+    function zinLengte(zin) {
+      //TODO: Hier de code om de lengte van de zin naar het console te schrijven
+	console.log(zin.length);
+    }
+
+    //TODO: Hier de code om van de array de lengte van iedere zin te tonen in het console
+    // Maak gebruik van bovenstaande functies
+    let zinnen = ['Dit is een zin', 'Dit is een andere zin', 'Dit is de laatste zin'];
+    bepaalLengteZinnen(zinnen, zinLengte);
+
+
+  </script>
+</body>
+</html>
